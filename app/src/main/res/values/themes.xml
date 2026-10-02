@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SmartPantryManager" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#5D4037</item>
+        <item name="colorPrimaryVariant">#3E2723</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#E65100</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:statusBarColor">#3E2723</item>
+        <item name="android:windowBackground">#FFF8E7</item>
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:textColorSecondary">#5D4037</item>
+        <item name="android:editTextColor">#212121</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

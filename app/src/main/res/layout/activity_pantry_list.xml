@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8E7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header_food"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_chef_hat"
+            android:layout_gravity="center"
+            android:contentDescription="Chef" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Pantry"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What you already have in the kitchen"
+            android:textColor="#FFE0B2"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddIngredient"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="+  ADD INGREDIENT"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="#E65100"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPantry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:clipToPadding="false" />
+
+        <TextView
+            android:id="@+id/tvEmptyPantry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/empty_pantry"
+            android:textSize="17sp"
+            android:textColor="#3E2723"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="28dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:elevation="10dp">
+
+        <Button
+            android:id="@+id/navPantry"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Pantry"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:backgroundTint="#5D4037"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/navRecipes"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Recipes"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:backgroundTint="#8D6E63"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/navSettings"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Settings"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:backgroundTint="#8D6E63"
+            android:layout_margin="4dp" />
+    </LinearLayout>
+</LinearLayout>

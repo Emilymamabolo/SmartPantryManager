@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E7"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_food"
+            android:padding="18dp"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:id="@+id/tvDetailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_food"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INGREDIENTS"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#558B2F"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvDetailIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#212121"
+                android:lineSpacingExtra="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_food"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="METHOD"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#E65100"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvDetailSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#212121"
+                android:lineSpacingExtra="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
